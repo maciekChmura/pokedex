@@ -1,6 +1,8 @@
 ## Pokedex
 A personal project for training purposes.
 
+![pokedex](pokedex.png)
+
 Data from [Pokeapi.co](https://pokeapi.co/)
 
 Technologies used:
