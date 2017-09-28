@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Search extends React.Component {
   constructor(props) {
@@ -21,7 +21,6 @@ class Search extends React.Component {
             onChange={this.handleFilterTextInputChange}
           />
         </form>
-
       </div>
     )
   }

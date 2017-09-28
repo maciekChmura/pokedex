@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
 body {
   background-color: #150E36;
 }
 .App {
   text-align: left;
-  
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +41,7 @@ body {
   background: transparent;
 }
 
-.wraper {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 380px 360px 1fr;
   grid-template-rows: 60px 647px 1fr;
@@ -87,7 +86,7 @@ body {
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 12px;
 }
 .float-right {
@@ -112,12 +111,12 @@ body {
   outline: 0;
   background-color: rgb(235, 235, 235);
   padding-left: 5px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
 .pokemon-name {
   float: right;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 14px;
   color: #3F3F3F;
 }
@@ -150,7 +149,7 @@ li {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:'Press Start 2P', cursive;
+	font-family:"Press Start 2P", cursive;
 	font-size:12px;
 		padding:9px 14px;
 	text-decoration:none;

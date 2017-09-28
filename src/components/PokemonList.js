@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Search from "./Search";
 import Container from "./Container";
 
@@ -6,7 +6,7 @@ class PokemonList extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			filterText: ''
+			filterText: ""
 		};
 		this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
 	}

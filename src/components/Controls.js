@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Controls = (props) => {
 	const randomId = (Math.ceil(Math.random() * 717)).toString();
@@ -7,7 +7,7 @@ const Controls = (props) => {
 	const id = parseInt(location.slice(1), 10);
 	let prevId = (id - 1).toString();
 	let nextId = (id + 1).toString();
-	if (location !== '/' && id === 1) {
+	if (location !== "/" && id === 1) {
 		return (
 			<div className="buttons">
 				<Link to="/">
@@ -24,7 +24,7 @@ const Controls = (props) => {
 				</Link>
 			</div>
 		)
-	} else if (location !== '/' && id === 717) {
+	} else if (location !== "/" && id === 717) {
 		return (
 			<div className="buttons">
 				<Link to="/">
@@ -41,7 +41,7 @@ const Controls = (props) => {
 				</Link>
 			</div>
 		)
-	} else if (location !== '/') {
+	} else if (location !== "/") {
 		return (
 			<div className="buttons">
 				<Link to="/">

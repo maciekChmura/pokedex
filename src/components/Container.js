@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import Pokemon from "./Pokemon"
 import {
   List
-} from 'react-virtualized';
+} from "react-virtualized";
 
 
 class Container extends React.Component { //product table

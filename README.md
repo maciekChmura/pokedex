@@ -11,6 +11,7 @@ Technologies used:
 * Webpack as a build tool
 * ES6 with Babel
 * [React Virtualized](https://github.com/bvaughn/react-virtualized) for efficient rendering of pokemon list
+* CSS Grid
 
 Functions in current version:
 
@@ -21,5 +22,4 @@ Functions in current version:
 * move to next/previous pokemon
 * move back to list 
 
-Things to do:
-* fix magic number used in "random" 
+
