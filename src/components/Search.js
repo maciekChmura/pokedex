@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +11,6 @@ class Search extends React.Component {
   }
 
   render() {
-    
     return (
       <div className="search">
         <form >
@@ -23,7 +21,7 @@ class Search extends React.Component {
             onChange={this.handleFilterTextInputChange}
           />
         </form>
-        
+
       </div>
     )
   }

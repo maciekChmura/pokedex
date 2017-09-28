@@ -8,7 +8,6 @@ class PokemonDetails extends React.Component {
     this.state = {
       data: {},
       id: 0,
-      skillsy: ['turbo', 'szybkie', 'kopniaki']
     }
   }
   componentDidMount() {
@@ -48,13 +47,13 @@ class PokemonDetails extends React.Component {
             <p>moves:</p>
             {this.state.data.moves.slice(0, 3).map(move => {
               return (
-                <li>{move.name}</li>
+                <li key={move.name}>{move.name}</li>
               )
             })}
             <p>types:</p>
             {this.state.data.types.slice(0, 2).map(type => {
               return (
-                <li>{type.name}</li>
+                <li key={type.name}>{type.name}</li>
               )
             })}
           </div>

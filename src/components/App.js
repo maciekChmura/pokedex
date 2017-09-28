@@ -1,11 +1,11 @@
 import React from 'react';
 import '../css/App.css';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import PokemonList from "./PokemonList";
 import PokemonDetails from "./PokemonDetails";
 import PokemonImage from "./PokemonImage";
 import Controls from "./Controls";
-  
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -23,24 +23,24 @@ class App extends React.Component {
   }
 
   render() {
-      if (Object.keys(this.state.data).length !== 0) {
-        return (
-          <div className="wraper">
-            <div className="left-panel">
-                <Route path='/' component={PokemonImage}/>
-                <Route path="/" component={Controls}/>
-            </div>
-
-            <div className="right-panel">
-                <Switch>
-                    <Route path='/:pokemonId' component={PokemonDetails} />
-                    <Route path='/' render={() => <PokemonList data={this.state.data} />} />
-                </Switch>
-            </div>
+    if (Object.keys(this.state.data).length !== 0) {
+      return (
+        <div className="wraper">
+          <div className="left-panel">
+            <Route path='/' component={PokemonImage} />
+            <Route path="/" component={Controls} />
           </div>
-        )
-      }
-      return null;
+
+          <div className="right-panel">
+            <Switch>
+              <Route path='/:pokemonId' component={PokemonDetails} />
+              <Route path='/' render={() => <PokemonList data={this.state.data} />} />
+            </Switch>
+          </div>
+        </div>
+      )
+    }
+    return null;
   }
 }
 
