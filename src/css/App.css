@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+  background-color: #150E36;
+}
+.App {
+  text-align: left;
+  
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff1162;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b20c46;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #8e0a38;
+}
+::-webkit-scrollbar-track {
+  background: #ebebeb;
+  border: 0px none #ffffff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ebebeb;
+}
+::-webkit-scrollbar-track:active {
+  background: #ebebeb;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.wraper {
+  display: grid;
+  grid-template-columns: 1fr 380px 360px 1fr;
+  grid-template-rows: 60px 647px 1fr;
+  
+}
+.left-panel {
+  display: grid;
+  grid-template-columns: 60px 240px 80px ;
+  grid-template-rows: 250px 240px 57px 100px ;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../images/left.svg");
+
+}
+.right-panel {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../images/right.svg");
+
+}
+.pokemon-list {
+  display: grid;
+  grid-template-columns: 60px 240px 60px ;
+  grid-template-rows: 200px 20px 30px 240px 57px 100px ;
+}
+.left-pokemon {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+.right-list {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+.float-right {
+  float: right;
+}
+.margin-up-down {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.search {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+.search-input {
+  width: 235px;
+  height: 20px;
+  border-radius: 4px;
+  border: 0;
+  outline: 0;
+  background-color: rgb(235, 235, 235);
+  padding-left: 5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.pokemon-name {
+  float: right;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #3F3F3F;
+}
+.pokemon-img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+li {
+  padding-top: 5px;
+}
+.buttons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+
+.button {
+	-moz-box-shadow:inset 0px 1px 3px 0px #71ada5;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #71ada5;
+	box-shadow:inset 0px 1px 3px 0px #71ada5;
+	background-color:#6DC5E6;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #803573;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Press Start 2P', cursive;
+	font-size:12px;
+		padding:9px 14px;
+	text-decoration:none;
+	
+}
+.button:hover {
+	background-color:#7bc7c7;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+.button:disabled {
+  background-color:#E292DB;
+}
+.button-random {
+	padding:9px 80px;
+}
+progress[value] {
+  
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 140px;
+  height: 12px;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: #CACACA;
+    border-radius: 2px;
+    transition: transform 2s;
+    
+  }
+  progress[value]::-webkit-progress-value {
+    background-image:
+         
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #DA1869);
+  
+      border-radius: 2px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+      transition: transform 2s;
+  }
