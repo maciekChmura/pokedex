@@ -1,9 +1,6 @@
 import React from "react";
 import Pokemon from "./Pokemon"
-import {
-  List
-} from "react-virtualized";
-
+import {List} from "react-virtualized";
 
 class Container extends React.Component { //product table
 

@@ -10,7 +10,7 @@ Data from [Pokeapi.co](https://pokeapi.co/)
 Technologies used:
 
 * [create-react-app](https://github.com/facebookincubator/create-react-app) as a boilerplate
-* React.js
+* React
 * React Router 4 
 * Webpack as a build tool
 * ES6 with Babel

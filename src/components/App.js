@@ -36,11 +36,14 @@ class App extends React.Component {
               <Route path="/:pokemonId" component={PokemonDetails} />
               <Route path="/" render={() => <PokemonList data={this.state.data} />} />
             </Switch>
+            <a href="https://github.com/maciekChmura/pokedex">
+              <div className="github-link"></div>
+            </a>
           </div>
         </div>
       )
     }
-    return null;
+    return <p className="loading-data">loading data from pokeapi.co</p>;
   }
 }
 

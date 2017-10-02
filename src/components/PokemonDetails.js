@@ -60,7 +60,13 @@ class PokemonDetails extends React.Component {
         </div>
       )
     }
-    return <div>Loading...</div>;
+    return (
+      <div className="pokemon-list">
+        <div className="right-list">
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
   }
 }
 
