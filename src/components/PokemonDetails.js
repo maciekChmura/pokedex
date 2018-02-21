@@ -13,11 +13,9 @@ class PokemonDetails extends React.Component {
   }
   componentDidMount() {
     const id = parseInt(this.props.match.params.pokemonId, 10);
-    console.log(id);
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
       .then(blob => blob.json())
       .then(blob => {
-        console.log(blob);
         this.setState({
           data: blob
         })
@@ -27,12 +25,10 @@ class PokemonDetails extends React.Component {
 
   componentDidUpdate(prevProps) {
     const id = parseInt(this.props.match.params.pokemonId, 10);
-    console.log(id);
     if (prevProps.match.params.pokemonId !== this.props.match.params.pokemonId) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then(blob => blob.json())
         .then(blob => {
-          console.log(blob);
           this.setState({
             data: blob
           })
@@ -42,6 +38,7 @@ class PokemonDetails extends React.Component {
   }
 
   render() {
+    console.log(Object.keys(this.state.data).length);
     if (Object.keys(this.state.data).length !== 0) {
       let data = this.state.data;
       return (
@@ -69,7 +66,7 @@ class PokemonDetails extends React.Component {
         </div>
       )
     }
-    return <div>Loading...</div>;
+    return <p className="loading" >loading...</p>;
   }
 }
 
