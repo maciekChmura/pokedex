@@ -112,6 +112,7 @@ body {
   background-color: rgb(235, 235, 235);
   padding-left: 5px;
   font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
 }
 
 .pokemon-name {
